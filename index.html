@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo de estilos CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Título da página -->
+    <title>VegBi</title>
+</head>
+<body>
+    <header>
+        <!-- Imagem do logotipo da VegBi com texto alternativo para acessibilidade -->
+        <img src="img/logo.png" alt="Logo VegBi">
+    </header>
+
+    <main>
+        <!-- Seção para pesquisa de receitas -->
+        <section>
+            <!-- Campo de texto para o usuário digitar a pesquisa -->
+            <input type="text" placeholder="Encontre sua receita..." id="campo-pesquisa">
+            <!-- Botão para acionar a função de pesquisa -->
+            <button onclick="pesquisar()">Pesquisar</button>
+        </section>
+
+        <!-- Seção para exibir os resultados da pesquisa -->
+        <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <p>&copy; 2024 Bárbara Costa - Todos os direitos reservados.</p>
+    </footer>
+    
+    <!-- Script para funcionalidades relacionadas a receitas -->
+    <script src="receitas.js"></script>
+    <!-- Script para funcionalidades gerais da aplicação -->
+    <script src="app.js"></script>
+</body>
+</html>
